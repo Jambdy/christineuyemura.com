@@ -14,7 +14,7 @@ jobs:
         with:
           hugo-version: '0.41'
       - name: build
-        run: hugo
+        run: hugo -v
       - name: Upload to S3
         run: |
           aws s3 sync ./public s3://christineuyemura.com --delete;
