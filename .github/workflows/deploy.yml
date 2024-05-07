@@ -17,6 +17,9 @@ jobs:
         run: hugo version; hugo -v;
       - name: List files in directory
         run: |
+          ls
+      - name: List files in directory1
+        run: |
           ls ./public
       # - name: Upload to S3
       #   run: |
