@@ -1,0 +1,24 @@
+name: Build and deploy site to AWS
+on:
+  push:
+    branches: [main]
+jobs:
+  build_deploy:
+    name: Build site and deploy to AWS
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.41'
+      - name: build
+        run: hugo
+      - name: Upload to S3
+        run: |
+          aws s3 sync ./public s3://christineuyemura.com
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: 'us-east-1'
