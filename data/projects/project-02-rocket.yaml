@@ -1,0 +1,9 @@
+modalID: 1
+title: Pyro Smoke
+subtitle: "Rocket launch created with PyroFX."
+date: 2014-07-05
+url: https://player.vimeo.com/video/127876377
+img: rocket.gif
+category: Pyro
+description: "Rocket launch created with Pyro. The result of an independent study focusing on Houdini’s pyro solver and using forces to control shape."
+video: '<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/142804938?h=f7ca632380&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Christine Uyemura VFX Reel Fall 2015"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>'
