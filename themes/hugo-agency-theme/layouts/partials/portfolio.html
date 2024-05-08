@@ -4,11 +4,35 @@
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2 class="section-heading">{{ with .Site.Params.portfolio.title }}{{ . | markdownify }}{{ end }}</h2>
-        <h3 class="section-subheading text-muted">{{ with .Site.Params.portfolio.subtitle }}{{ . | markdownify }}{{ end }}</h3>
+        <h3 class="section-subheading text-muted" style="margin-bottom: 0px">{{ with .Site.Params.portfolio.subtitle_0 }}{{ . | markdownify }}{{ end }}</h3>
       </div>
     </div>
-    <div class="row">
 
+    <aside class="clients">
+      <div class="container">
+        <div class="row flexbox{{ if .Site.Params.show_list.center }} flexbox-center{{ end }}">
+
+          {{ range .Site.Params.shows }}
+          <div class="col-md-3 col-sm-6 col">
+            {{ $url := printf "img/logos/%s" .logo }}
+            {{ if .link }}
+            <a href="{{ .link }}">
+              <img src="{{ $url | absURL }}" class="img-responsive img-centered" alt="">
+            </a>
+            {{ else }}
+            <img src="{{ $url | absURL }}" class="img-responsive img-centered" alt="">
+            {{ end }}
+          </div>
+          {{ end }}
+
+        </div>
+      </div>
+    </aside>
+
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h3 class="section-subheading text-muted" style="margin-bottom: 50px">{{ with .Site.Params.portfolio.subtitle_1 }}{{ . | markdownify }}{{ end }}</h3>
+      </div>
       {{ range .Site.Data.projects }}
         <div class="col-md-4 col-sm-6 portfolio-item">
           <a href="#portfolioModal{{ .modalID }}" class="portfolio-link" data-toggle="modal">
@@ -17,7 +41,7 @@
                 <i class="fa fa-plus fa-3x"></i>
               </div>
             </div>
-            {{ $url := printf "img/portfolio/%s" .preview }}
+            {{ $url := printf "img/portfolio/%s" .img }}
             <img src="{{ $url | absURL }}" class="img-responsive" alt="">
           </a>
           <div class="portfolio-caption">

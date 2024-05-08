@@ -1,7 +1,7 @@
 # Site settings
-baseurl = "https://example.org/"
+baseurl = "https://christineuyemura.com/"
 languageCode = "en-us"
-title = "Agency"
+title = "Christine Uyemura FX TD/Artist"
 theme = "hugo-agency-theme"
 
 # Enter your tracking code to enable Google Analytics
@@ -17,8 +17,8 @@ googleAnalytics = ""
 
   # To provide some metadata for search engines feel free to add a few
   # information about you and your website.
-  name = "Your name"
-  description = "Your description"
+  name = "Christine Uyemura"
+  description = "FX TD / FX Artist working in the VFX industry in Montreal"
   # email = "your@email.com"
 
   # Link custom assets relative to /static
@@ -46,13 +46,12 @@ googleAnalytics = ""
 
   # Navigation
   [params.navigation]
-    brand = "The Agency"
+    brand = "Christine!"
     # Optional logo as brand stored in img/
-    #logo = "logo.svg"
-    services = "Services"
-    portfolio = "Portfolio"
+    logo = "logo.svg"
+    reel = "Reel"
+    portfolio = "Work"
     about = "About"
-    team = "Team"
     contact = "Contact"
 
     # Add custom links. Those can be pre- and postpended to the default menu above.
@@ -66,150 +65,10 @@ googleAnalytics = ""
     #  weight = 10
 
     # postpended links
-    [[menu.postpend]]
-      url = "http://gohugo.io"
-      name = "External link"
-      weight = 10
-
-
-  # Hero section
-  [params.hero]
-    # To change the background image of the hero, replace 'header-bg.jpg' in
-    # the 'static/img' folder.
-    title = "Welcome To Our Studio!"
-    subtitle = "It's nice to meet you"
-    buttonText = "Tell me more"
-
-
-  # Services section
-  [params.services]
-    enable = true
-    title = "Services"
-    subtitle = "Lorem ipsum dolor sit amet consectetur."
-
-    [[params.services.row]]
-
-    [[params.services.row.list]]
-      icon = "fa-shopping-cart"
-      title = "E-Commerce"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-      url = "#"
-
-    [[params.services.row.list]]
-      icon = "fa-laptop"
-      title = "Responsive Design"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-      url = "#"
-
-    [[params.services.row.list]]
-      icon = "fa-lock"
-      title = "Web"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-      url = "#"
-
-  # Portfolio section
-  [params.portfolio]
-    enable = true
-    # All projects defined in their own files. You can find example projects
-    # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
-    # at the root of this Hugo site.
-    # For more informtion take a look at the README.
-    title = "Portfolio"
-    subtitle = "Lorem ipsum dolor sit amet consectetur."
-
-    [params.portfolio.modal]
-      client = "Client"
-      date = "Date"
-      category = "Category"
-      buttonText = "Close project"
-
-
-    # About section
-  [params.about]
-    enable = true
-    title = "About"
-    subtitle = "Lorem ipsum dolor sit amet consectetur."
-    endpoint = "Be part<br>of our<br>story!"
-
-    # The events will be listed from the top to the bottom.
-    # All images are stored under 'static/img/about'.
-    # Replace them with your own.
-    [[params.about.events]]
-      img = "1.jpg"
-      date = "2009-2011"
-      title = "Our Humble Beginnings"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-
-    [[params.about.events]]
-      img = "2.jpg"
-      date = "March 2011"
-      title = "An Agency is Born"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-
-    [[params.about.events]]
-      img = "3.jpg"
-      date = "December 2012"
-      title = "Our Humble Beginnings"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-
-    [[params.about.events]]
-      img = "4.jpg"
-      date = "July 2014"
-      title = "Phase Two Expansion"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-
-
-  # Team section
-  [params.team]
-    enable = true
-    # Possibility to center items
-    #center = true
-    title = "Our amazing team"
-    subtitle = "Lorem ipsum dolor sit amet consectetur."
-    description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."
-
-    # All team member's pictures are stored under 'static/img/team'.
-    # Replace them with your own too.
-    # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
-    [[params.team.members]]
-      img = "1.jpg"
-      name = "Kay Garland"
-      position = "Lead Designer"
-      reportsTo = "CTO"
-      livesIn = "[Munich, Germany](#some-maps-url)"
-      scope = [
-        "UX for [member dashboard](#)",
-        "Maintainer for [awesome-project](#)",
-        "Open Source [community management](#)"
-      ]
-      # For bio markdown and even multiline strings are available.
-      bio = """Kay is an awesome Lead Designer with heaps of experience in the field of UX.
-She worked at Pied Piper for years until they went belly up."""
-      social = [
-        ["fa-twitter", "#"],
-        ["fa-facebook", "#"],
-        ["fa-linkedin", "#"]
-      ]
-
-    [[params.team.members]]
-      img = "2.jpg"
-      name = "Larry Parker"
-      position = "Lead Marketer"
-      social = [
-        ["fa-twitter", "#"],
-        ["fa-facebook", "#"],
-        ["fa-linkedin", "#"]
-      ]
-
-    [[params.team.members]]
-      img = "3.jpg"
-      name = "Diana Pertersen"
-      position = "Lead Developer"
-      social = [
-        ["fa-twitter", "#"],
-        ["fa-facebook", "#"],
-        ["fa-linkedin", "#"]
-      ]
+    #[[menu.postpend]]
+    #  url = "https://www.linkedin.com/in/christineuyemura/"
+    #  name = "LinkedIn"
+    #  weight = 10
 
   # Client section
     [params.clients_list]
@@ -222,107 +81,140 @@ She worked at Pied Piper for years until they went belly up."""
       # All the clients' logos are stored under 'static/img/logos'.
       # Replace them with your clients's logos.
       # Suggestion: .svg in the size of 280px*80px looks good
-      [[params.clients]]
-        logo = "envato.jpg"
-        link = "#"
 
       [[params.clients]]
-        logo = "designmodo.jpg"
+        logo = "flag.jpg"
+        link = "#"
+      [[params.clients]]
+        logo = "fat.jpg"
+        link = "#"
+      [[params.clients]]
+        logo = "gsoe.jpg"
+        link = "#"
+      [[params.clients]]
+        logo = "bge.jpg"
+        link = "#"
+      [[params.clients]]
+        logo = "tsp.jpg"
+        link = "#"
+      [[params.clients]]
+        logo = "tnc.jpg"
         link = "#"
 
-      [[params.clients]]
-        logo = "themeforest.jpg"
-        link = "#"
+  # Hero section
+  [params.hero]
+    # To change the background image of the hero, replace 'header-bg.jpg' in
+    # the 'static/img' folder.
+    title = "FX Artist/TD"
+    subtitle = "Hi, I'm Christine!"
+    buttonText = "Checkout My Reel"
 
-      [[params.clients]]
-        logo = "creative-market.jpg"
-        link = "#"
+  # Reel section
+  [params.reel]
+  	enable = true
+    title = "Reel"
+    subtitle = "A compilation of my released work"
+
+  # Portfolio section
+  [params.portfolio]
+    enable = true
+    # All projects defined in their own files. You can find example projects
+    # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+    # at the root of this Hugo site.
+    # For more informtion take a look at the README.
+    title = "Work"
+    subtitle_0 = "Past Shows"
+    subtitle_1 = "Past Projects"
+
+    # Shows subsection
+    [params.show_list]
+      enable = true
+      # Possibility to center items
+      #center = true
+      # All the show' logos are stored under 'static/img/logos'.
+
+      [[params.shows]]
+        logo = "flag.jpg"
+      [[params.shows]]
+        logo = "fat.jpg"
+      [[params.shows]]
+        logo = "gsoe.jpg"
+      [[params.shows]]
+        logo = "bge.jpg"
+      [[params.shows]]
+        logo = "tsp.jpg"
+      [[params.shows]]
+        logo = "tnc.jpg"
+
+
+
+    [params.portfolio.modal]
+      client = "Client"
+      date = "Date"
+      category = "Category"
+      buttonText = "Close project"
+
+
+    # About section
+  [params.about]
+    enable = true
+    title = "About"
+    subtitle = "A brief history of Me, or you can "
+    resumetext = " download my resume here."
+    resumelink = "img/about/ChristineUyemura_Resume_2019-02-05.pdf"
+    resumename = "Christine Uyemura Resume"
+    endpoint = "New Adventures!"
+    endimage = "img/about/adventures.jpg"
+
+    # The events will be listed from the top to the bottom.
+    # All images are stored under 'static/img/about'.
+    # Replace them with your own.
+    [[params.about.events]]
+      img = "idtech.jpg"
+      date = "The Beginning"
+      title = "Smyrna, GA"
+      description = "I was born and raised in <strong>Smyrna, GA</strong> just outside of Atlanta. I first fell in love with CG while taking a Maya modeling and animation course at iDTech Camps at Emory University when I was in high school. My first ever Maya model was Iron Man."
+
+    [[params.about.events]]
+      img = "penn.gif"
+      date = "Engineering School"
+      title = "Philadelphia, PA"
+      description = "I received my Bachelor's of Science in Engineering for Digital Media Design (Computer Graphics) from the <strong>University of Pennsylvania</strong>, minoring in Consumer Psychology. While in school I had several jobs including iD Tech Maya instructor, Computer Science Teaching Assistant, Graphic Designer, and Web Content Intern at Lucasfilm. "
+
+    [[params.about.events]]
+      img = "scad.gif"
+      date = "Graduate Art School"
+      title = "Atlanta, GA"
+      description = "I received my MFA in VFX from the <strong>Savannah College of Art and Design</strong>. As a grad student I also worked as a Designer, Developer and Project Manager for Hughes Media, the VFX Tutor and Houdini Teaching Assistant for SCAD and the Digital Artist Intern for Apple's Marketing & Communications CG department in Sunnyvale, CA."
+
+    [[params.about.events]]
+      img = "mpc.gif"
+      date = "VFX Industry"
+      title = "Montreal, QC"
+      description = "After finishing my grad degree I moved to Montreal to work as an FX TD at <strong>MPC</strong>. My first film was <em>The Greatest Showman</em>. After working on <em>The Nutcracker and the Four Realms</em> and <em>Godzilla: King of the Monsters</em> I was promoted to Key FX Artist. Since then I have worked on <em>Dumbo</em>, <em>X-Men: Dark Phoenix</em> and <em>Maleficent: Mistress of Evil</em>."
+
 
   # Contact section
   [params.contact]
     enable = true
-    title = "Contact us"
-    subtitle  = "Lorem ipsum dolor sit amet consectetur."
-    buttonText = "Send message"
-    # netlify = true
-
-    # Since this template is static, the contact form uses www.formspree.io as a
-    # proxy. The form makes a POST request to their servers to send the actual
-    # email. Visitors can send up to a 1000 emails each month for free.
-    #
-    # What you need to do for the setup?
-    #
-    # - set your email address under 'email' below
-    # - upload the generated site to your server
-    # - send a dummy email yourself to confirm your account
-    # - click the confirm link in the email from www.formspree.io
-    # - you're done. Happy mailing!
-
-    # It is possible to substitute formspring with other providers
-    # as an example the mailout plugin from caddy.
-    # Provide the post URL for the form and depending on the provider
-    # add some custom JS script to finish the implementation.
-    # postURL = "https://example.com/mailout/"
-
-    email = "your@email.com"
-
-    # Success and error message overwrite for async contact form
-    #thanks = "Thank you for awesomely contacting us."
-    #error = "Message could not be send. Please contact us at mail@example.com instead."
-
-    [params.contact.captcha]
-      # sitekey = ""
-
-    # 'warning' defines error messages for invalid inputs
-    [params.contact.form.name]
-      text = "Your Name *"
-      warning = "Please enter your name."
-
-    [params.contact.form.email]
-      text = "Your Email *"
-      warning = "Please enter your email address."
-
-    [params.contact.form.phone]
-      text = "Your Phone *"
-      warning = "Please enter your phone number."
-
-    [params.contact.form.message]
-      text = "Your Message *"
-      warning = "Please enter a message."
-
-      # Add optional form fields to identify contact forms
-      #[[params.contact.form.hidden]]
-      #  name = "someID"
-      #  value = "example.com"
-      #
-      #[[params.contact.form.hidden]]
-      # Special values for name such as "page" and "site" will be autofilled
-      #  name = "page"
+    title = "Say Hello"
+    icon = "fa-envelope"
+    subtitle  = "Christine Uyemura | FX Artist/TD"
+    contactemail = "christineuyemura@gmail.com"
+    contactlinkedin = "https://www.linkedin.com/in/christineuyemura/"
 
   # Footer section
   [params.footer]
     enable = true
     copyright = "Published under the Apache License 2.0."
 
-    [[params.footer.social]]
-      icon = "fa-twitter"
-      link = "#"
-      title = "Twitter"
-
-    [[params.footer.social]]
-      icon = "fa-facebook"
-      link = "#"
-      title = "Facebook"
 
     [[params.footer.social]]
       icon = "fa-linkedin"
-      link = "#"
-      title = "LinkedIn"
+      link = "https://www.linkedin.com/in/christineuyemura/"
+      title = "Christine Uyemura on LinkedIn"
 
-    [[params.footer.quicklinks]]
-      text = "Privacy Policy"
-      link = "#"
-
-    [[params.footer.quicklinks]]
-      text = "Terms of Use"
-      link = "#"
+    [[params.footer.social]]
+      icon = "fa-vimeo"
+      link = "https://vimeo.com/christineuyemura"
+      title = "Christine Uyemura on Vimeo"

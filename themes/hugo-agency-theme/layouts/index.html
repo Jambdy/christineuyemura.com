@@ -7,8 +7,8 @@
     {{ partial "nav.html" . }}
     {{ partial "hero.html" . }}
 
-    {{ if .Site.Params.services.enable }}
-      {{ partial "services.html" . }}
+    {{ if .Site.Params.reel.enable }}
+      {{ partial "reel.html" . }}
     {{ end }}
 
     {{ if .Site.Params.portfolio.enable }}
@@ -17,14 +17,6 @@
 
     {{ if .Site.Params.about.enable }}
       {{ partial "about.html" . }}
-    {{ end }}
-
-    {{ if .Site.Params.team.enable }}
-      {{ partial "team.html" . }}
-    {{ end }}
-
-    {{ if .Site.Params.clients_list.enable }}
-      {{ partial "clients.html" . }}
     {{ end }}
 
     {{ if .Site.Params.contact.enable }}
