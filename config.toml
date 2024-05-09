@@ -83,6 +83,21 @@ googleAnalytics = ""
       # Suggestion: .svg in the size of 280px*80px looks good
 
       [[params.clients]]
+        logo = "wdw.jpg"
+        link = "#"
+      [[params.clients]]
+        logo = "scallop.jpg"
+        link = "#"
+      [[params.clients]]
+        logo = "cru.jpg"
+        link = "#"
+      [[params.clients]]
+        logo = "apex.jpg"
+        link = "#"
+      [[params.clients]]
+        logo = "apex.jpg"
+        link = "#"
+      [[params.clients]]
         logo = "flag.jpg"
         link = "#"
       [[params.clients]]
@@ -106,7 +121,7 @@ googleAnalytics = ""
     # To change the background image of the hero, replace 'header-bg.jpg' in
     # the 'static/img' folder.
     title = "FX Artist/TD"
-    subtitle = "Hi, I'm Christine!"
+    subtitle = "Hi, I'm Christine!a"
     buttonText = "Checkout My Reel"
 
   # Reel section
