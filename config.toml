@@ -115,6 +115,9 @@ googleAnalytics = ""
         logo = "apex.jpg"
         link = "#"
       [[params.shows]]
+        logo = "zipp.jpg"
+        link = "#"
+      [[params.shows]]
         logo = "flag.jpg"
       [[params.shows]]
         logo = "fat.jpg"
