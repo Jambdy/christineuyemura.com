@@ -70,52 +70,6 @@ googleAnalytics = ""
     #  name = "LinkedIn"
     #  weight = 10
 
-  # Client section
-    [params.clients_list]
-      enable = true
-      # Possibility to center items
-      #center = true
-      # Optional client title specifying the involvement
-      #title = "Used and trusted by"
-
-      # All the clients' logos are stored under 'static/img/logos'.
-      # Replace them with your clients's logos.
-      # Suggestion: .svg in the size of 280px*80px looks good
-
-      [[params.clients]]
-        logo = "wdw.jpg"
-        link = "#"
-      [[params.clients]]
-        logo = "scallop.jpg"
-        link = "#"
-      [[params.clients]]
-        logo = "cru.jpg"
-        link = "#"
-      [[params.clients]]
-        logo = "apex.jpg"
-        link = "#"
-      [[params.clients]]
-        logo = "apex.jpg"
-        link = "#"
-      [[params.clients]]
-        logo = "flag.jpg"
-        link = "#"
-      [[params.clients]]
-        logo = "fat.jpg"
-        link = "#"
-      [[params.clients]]
-        logo = "gsoe.jpg"
-        link = "#"
-      [[params.clients]]
-        logo = "bge.jpg"
-        link = "#"
-      [[params.clients]]
-        logo = "tsp.jpg"
-        link = "#"
-      [[params.clients]]
-        logo = "tnc.jpg"
-        link = "#"
-
   # Hero section
   [params.hero]
     # To change the background image of the hero, replace 'header-bg.jpg' in
@@ -148,6 +102,18 @@ googleAnalytics = ""
       #center = true
       # All the show' logos are stored under 'static/img/logos'.
 
+      [[params.shows]]
+        logo = "wdw.jpg"
+        link = "#"
+      [[params.shows]]
+        logo = "scallop.jpg"
+        link = "#"
+      [[params.shows]]
+        logo = "cru.jpg"
+        link = "#"
+      [[params.shows]]
+        logo = "apex.jpg"
+        link = "#"
       [[params.shows]]
         logo = "flag.jpg"
       [[params.shows]]
