@@ -99,9 +99,9 @@ googleAnalytics = ""
     [params.show_list]
       enable = true
       # Possibility to center items
-      #center = true
-      # All the show' logos are stored under 'static/img/logos'.
+      center = true
 
+      # All the show' logos are stored under 'static/img/logos'
       [[params.shows]]
         logo = "wdw.jpg"
       [[params.shows]]
@@ -111,9 +111,13 @@ googleAnalytics = ""
       [[params.shows]]
         logo = "apex.jpg"
       [[params.shows]]
+        logo = "flag.jpg"
+      [[params.shows]]
         logo = "zipp.jpg"
       [[params.shows]]
-        logo = "flag.jpg"
+        logo = "n1917.jpg"
+      [[params.shows]]
+        logo = "cotw.jpg"
       [[params.shows]]
         logo = "fat.jpg"
       [[params.shows]]
@@ -121,9 +125,7 @@ googleAnalytics = ""
       [[params.shows]]
         logo = "bge.jpg"
       [[params.shows]]
-        logo = "tsp.jpg"
-      [[params.shows]]
-        logo = "tnc.jpg"
+        logo = "ssk.jpg"
 
 
 
