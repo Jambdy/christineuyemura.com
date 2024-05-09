@@ -104,19 +104,14 @@ googleAnalytics = ""
 
       [[params.shows]]
         logo = "wdw.jpg"
-        link = "#"
       [[params.shows]]
         logo = "scallop.jpg"
-        link = "#"
       [[params.shows]]
         logo = "cru.jpg"
-        link = "#"
       [[params.shows]]
         logo = "apex.jpg"
-        link = "#"
       [[params.shows]]
         logo = "zipp.jpg"
-        link = "#"
       [[params.shows]]
         logo = "flag.jpg"
       [[params.shows]]
