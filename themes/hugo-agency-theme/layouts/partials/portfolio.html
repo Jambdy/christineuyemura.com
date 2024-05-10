@@ -13,7 +13,7 @@
         <div class="row flexbox{{ if .Site.Params.show_list.center }} flexbox-center{{ end }}">
 
           {{ range .Site.Params.shows }}
-          <div class="col-md-3 col-sm-6 col">
+          <div class="col-md-3 col-sm-6 col" style="width: 16.6%">
             {{ $url := printf "img/logos/%s" .logo }}
             {{ if .link }}
             <a href="{{ .link }}">

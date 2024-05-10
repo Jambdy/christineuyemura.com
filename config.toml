@@ -5,7 +5,7 @@ title = "Christine Uyemura FX TD/Artist"
 theme = "hugo-agency-theme"
 
 # Enter your tracking code to enable Google Analytics
-googleAnalytics = ""
+googleAnalytics = "G-Q4LKQ890K3"
 
 [params]
   # You can use Markdown syntax for urls [text](//url.to/source) or
@@ -75,14 +75,14 @@ googleAnalytics = ""
     # To change the background image of the hero, replace 'header-bg.jpg' in
     # the 'static/img' folder.
     title = "FX Artist/TD"
-    subtitle = "Hi, I'm Christine!a"
+    subtitle = "Hi, I'm Christine!"
     buttonText = "Checkout My Reel"
 
   # Reel section
   [params.reel]
   	enable = true
     title = "Reel"
-    subtitle = "A compilation of my released work"
+    subtitle = "Some of the shots and shows I've been working on in the past few years as an FX Artist and Lead"
 
   # Portfolio section
   [params.portfolio]
@@ -92,7 +92,7 @@ googleAnalytics = ""
     # at the root of this Hugo site.
     # For more informtion take a look at the README.
     title = "Work"
-    subtitle_0 = "Past Shows"
+    subtitle_0 = "Past and current shows that I've been able to be a part of!"
     subtitle_1 = "Past Projects"
 
     # Shows subsection
@@ -140,10 +140,10 @@ googleAnalytics = ""
   [params.about]
     enable = true
     title = "About"
-    subtitle = "A brief history of Me, or you can "
-    resumetext = " download my resume here."
-    resumelink = "img/about/ChristineUyemura_Resume_2019-02-05.pdf"
-    resumename = "Christine Uyemura Resume"
+    subtitle = "A brief history of Me"
+    #resumetext = " download my resume here."
+    #resumelink = "img/about/ChristineUyemura_Resume_2019-02-05.pdf"
+    #resumename = "Christine Uyemura Resume"
     endpoint = "New Adventures!"
     endimage = "img/about/adventures.jpg"
 
@@ -170,9 +170,15 @@ googleAnalytics = ""
 
     [[params.about.events]]
       img = "mpc.gif"
-      date = "VFX Industry"
+      date = "VFX Industry - FX Artist"
       title = "Montreal, QC"
-      description = "After finishing my grad degree I moved to Montreal to work as an FX TD at <strong>MPC</strong>. My first film was <em>The Greatest Showman</em>. After working on <em>The Nutcracker and the Four Realms</em> and <em>Godzilla: King of the Monsters</em> I was promoted to Key FX Artist. Since then I have worked on <em>Dumbo</em>, <em>X-Men: Dark Phoenix</em> and <em>Maleficent: Mistress of Evil</em>."
+      description = "After finishing my grad degree I moved to Montreal to work in FX at <strong>MPC</strong> where my first film was <em>The Greatest Showman</em>. I worked on several shows as an Artist and Key Artist including <em>Godzilla: King of the Monsters</em>, <em>Maleficent: Mistress of Evil</em>, and <em>Cruella</em>."
+    
+    [[params.about.events]]
+      img = "lead.gif"
+      date = "VFX Industry - FX Lead"
+      title = "Montreal, QC"
+      description = "I became a lead in January of 2021. My biggest projects as a lead have been The Little Mermaid and the upcoming Mufasa!"
 
 
   # Contact section
