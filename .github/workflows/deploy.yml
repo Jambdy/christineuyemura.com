@@ -2,24 +2,29 @@ name: Build and deploy site to AWS
 on:
   push:
     branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  id-token: write
 jobs:
   build_deploy:
     name: Build site and deploy to AWS
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: '0.125.7'
       - name: build
         run: hugo -v
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::190553893822:role/GitHubActionsSiteDeploy
+          aws-region: us-east-1
       - name: Upload to S3
         run: |
-          aws s3 sync ./public s3://christineuyemura.com --delete;
-          aws cloudfront create-invalidation --distribution-id E16IEQ1P3NC3M9 --paths "/*";
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_DEFAULT_REGION: 'us-east-1'
+          aws s3 sync ./public s3://christineuyemura-site --delete;
+          aws cloudfront create-invalidation --distribution-id ETOD6JN5Z95I --paths "/*";
